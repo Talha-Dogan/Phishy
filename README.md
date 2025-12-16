@@ -14,8 +14,9 @@
 The game uses a unique **"Bucket Mechanic"** that turns your score into your lifeline.
 
 ### 🔗 Play Online
-Play directly in your browser on Itch.io:
-- **[Play Phishy Now](https://talha-dogan.itch.io/phishy)**
+**Join the quiz! How safe are you on the internet?** Test your skills and prepare yourself against phishing attacks:
+
+- **[🎣 Play Phishy Now](https://talha-dogan.itch.io/phishy)**
 
 ## 🪣 How to Play (The Bucket Rule)
 
