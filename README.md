@@ -1,0 +1,61 @@
+# Phishy 🎣
+
+![DevTime](https://img.shields.io/badge/Time_Spent-48_Hours-orange)
+![Genre](https://img.shields.io/badge/Genre-Educational_Quiz-blue)
+![Engine](https://img.shields.io/badge/Made%20with-Unity-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+> A colorful phishing awareness game where your knowledge fills your bucket. Don't let the fish escape!
+
+## 🌊 About The Game
+
+**Phishy** is an educational arcade game designed to test your ability to spot cyber scams. Developed in just 48 hours, it combines a vibrant visual style with critical thinking challenges.
+
+The game uses a unique **"Bucket Mechanic"** that turns your score into your lifeline.
+
+### 🔗 Play Online
+Play directly in your browser on Itch.io:
+- **[Play Phishy Now](https://talha-dogan.itch.io/phishy)**
+
+## 🪣 How to Play (The Bucket Rule)
+
+You are fishing by the sea, but you need to prove your skills to keep your catch.
+
+* ✅ **Correct Answer:** You catch a fish! (+1 to Bucket)
+* ❌ **Wrong Answer:** You lose a fish! (-1 from Bucket)
+* 💀 **Game Over:** If your bucket becomes empty, the game ends immediately.
+
+## ✨ Key Features
+
+* **High Stakes Gameplay:** Every mistake costs you a fish. Survival depends on accuracy.
+* **Vibrant Visuals:** A lively and colorful art style.
+* **Global Leaderboard:** Compete with other players to see who can keep the most fish.
+* **Educational:** Learn to identify phishing attempts, fake emails, and malicious links.
+
+## 🛠️ Built With
+
+* **Engine:** Unity 2022.3 (LTS)
+* **Language:** C#
+
+  
+## 📸 Screenshots
+
+| Quiz Interface | The Bucket | Leaderboard |
+|:---:|:---:|:---:|
+| | | |
+
+## 🚀 Installation
+
+1.  Clone the repo:
+    ```bash
+    git clone [https://github.com/Talha-Dogan/Phishy.git](https://github.com/Talha-Dogan/Phishy.git)
+    ```
+2.  Open the project in **Unity Hub**.
+3.  Press Play and start fishing!
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+*Developed by [Talha Dogan](https://talha-dogan.itch.io/)*
