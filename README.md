@@ -37,14 +37,18 @@ You are fishing by the sea, but you need to prove your skills to keep your catch
 * **Engine:** Unity 2022.3 (LTS)
 * **Language:** C#
 
-  
+
 ## 📸 Screenshots
 
-| Quiz Interface | The Bucket | Leaderboard |
-|:---:|:---:|:---:|
-| | | |
+| Start Menu | Gameplay |
+|:---:|:---:|
+| ![](https://github.com/user-attachments/assets/7464780f-8051-434b-817c-cf99dbcd9138) | ![](https://github.com/user-attachments/assets/a2930b1a-2011-42f6-8eb4-42bb175b99d1) |
+| **Quiz: Caught Fish! ✅** | **Quiz: Lost Fish! ❌** |
+| ![](https://github.com/user-attachments/assets/b6fb23ab-aab3-4fb1-bce7-2e785033b2ce) | ![](https://github.com/user-attachments/assets/8d5dbef3-c31a-4bb5-93f4-d54cd96fbc0f) |
+
 
 ## 🚀 Installation
+
 
 1.  Clone the repo:
     ```bash
