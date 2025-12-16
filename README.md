@@ -18,7 +18,7 @@ The game uses a unique **"Bucket Mechanic"** that turns your score into your lif
 
 - **[🎣 Play Phishy Now](https://talha-dogan.itch.io/phishy)**
 
-## 🪣 How to Play (The Bucket Rule)
+## 🪣 How to Play 
 
 You are fishing by the sea, but you need to prove your skills to keep your catch.
 
