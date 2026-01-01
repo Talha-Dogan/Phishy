@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using TMPro;
 using Dan.Main;
+using System.Collections.Generic;
 
 public class LeaderboardManager : MonoBehaviour
 {
     [Header("UI Elements")]
-    [SerializeField] private TMP_Text[] _namesTextObjects;   // Name column
-    [SerializeField] private TMP_Text[] _scoresTextObjects;  // Score column
+    [SerializeField] private TMP_Text[] _namesTextObjects;
+    [SerializeField] private TMP_Text[] _scoresTextObjects;
     [SerializeField] private TMP_InputField _usernameInputField;
     [SerializeField] private TMP_Text _currentScoreText;
 
@@ -32,7 +33,6 @@ public class LeaderboardManager : MonoBehaviour
     {
         "Ahmet Yılmaz", "Mehmet Demir", "Ali Kaya", "Can Yıldız", "Emre Şahin",
         "Mustafa Koç", "Burak Aydın", "Kerem Arslan", "Mert Özkan", "Serkan Kaplan"
-
     };
 
     private void Start()
@@ -80,43 +80,32 @@ public class LeaderboardManager : MonoBehaviour
     {
         Leaderboards.PhishyLeaderBoard.GetEntries(entries =>
         {
-            int total = Mathf.Max(entries.Length, Mathf.Max(_namesTextObjects.Length, _scoresTextObjects.Length));
-            var fullEntries = new TestEntry[total];
+            int total = Mathf.Max(entries.Length, Mathf.Min(_namesTextObjects.Length, _scoresTextObjects.Length));
 
-            // Add current leaderboard entries
-            int count = 0;
+            var fullEntries = new List<TestEntry>();
+
             foreach (var e in entries)
             {
-                fullEntries[count++] = new TestEntry(e.Username, e.Score);
+                fullEntries.Add(new TestEntry(e.Username, e.Score));
             }
 
-            // Add test/funny entries if needed
-            for (int i = count; i < total; i++)
+            int currentCount = fullEntries.Count;
+            if (currentCount < total)
             {
-                string name = funnyNames[i % funnyNames.Length];
-                fullEntries[i] = new TestEntry(name, Random.Range(1, 10));
-            }
-
-            // Place the current player's score in the correct position
-            bool playerAdded = false;
-            for (int i = 0; i < fullEntries.Length; i++)
-            {
-                if (!playerAdded && PlayerName == _usernameInputField.text && Score.score <= fullEntries[i].Score)
+                for (int i = 0; i < (total - currentCount); i++)
                 {
-                    fullEntries[i] = new TestEntry(PlayerName, Score.score);
-                    playerAdded = true;
+                    string name = funnyNames[i % funnyNames.Length];
+                    fullEntries.Add(new TestEntry(name, Random.Range(1, 10)));
                 }
             }
 
-            // Sort scores from lowest to highest
-            System.Array.Sort(fullEntries, (a, b) => a.Score.CompareTo(b.Score));
+            fullEntries.Sort((a, b) => b.Score.CompareTo(a.Score));
 
-            // Safely fill TMP_Text columns
             int safeLength = Mathf.Min(_namesTextObjects.Length, _scoresTextObjects.Length);
 
             for (int i = 0; i < safeLength; i++)
             {
-                if (i < fullEntries.Length)
+                if (i < fullEntries.Count)
                 {
                     _namesTextObjects[i].text = fullEntries[i].Username;
                     _scoresTextObjects[i].text = fullEntries[i].Score.ToString();

@@ -399,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914915300}
   - component: {fileID: 914915299}
-  - component: {fileID: 914915303}
+  - component: {fileID: 914915304}
   m_Layer: 0
   m_Name: FishTank
   m_TagString: Untagged
@@ -447,7 +447,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 15cc804e914fbae41bf788943884fa65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -474,27 +474,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &914915303
-Animator:
-  serializedVersion: 5
+--- !u!114 &914915304
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914915298}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab9394998681aa848a24a1048071bff4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041c934746be0b84cb0a14952b2b3e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundRenderer: {fileID: 914915299}
+  aquariumSprites:
+  - {fileID: 21300000, guid: 15cc804e914fbae41bf788943884fa65, type: 3}
+  - {fileID: 21300000, guid: d6094711e18323e4eace67f648cc6079, type: 3}
+  - {fileID: 21300000, guid: 52799bfadfe896b409d87f8bfe055aa2, type: 3}
+  - {fileID: 21300000, guid: 8df5e08c5832c4f46897eb10319e61b3, type: 3}
 --- !u!1 &929481409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df53d5eccd136e438efb889591191e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScript: {fileID: 473579320}
   question: {fileID: 1675613518}
   buttonText:
   - {fileID: 494955691}
@@ -1491,7 +1489,7 @@ MonoBehaviour:
     C: "C) It\u2019s a tool for encrypting your data"
     D: "D) It\u2019s a type of antivirus program"
     answer: 65
-  fishSystem: {fileID: 473579320}
+  fishSystem: {fileID: 914915304}
 --- !u!4 &1925959559
 Transform:
   m_ObjectHideFlags: 0

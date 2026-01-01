@@ -3,31 +3,43 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class quizStuff : MonoBehaviour
+public class QuizManager : MonoBehaviour
 {
+    [Header("Player Reference")]
+    public FishScoreSystem playerScript;
+
     public TMP_Text question;
     public TMP_Text[] buttonText;
     public Button nextButton;
 
     public List<quizQuestions> questions = new List<quizQuestions>();
-    int currentQuestion = 0;    // pointer to question
+    int currentQuestion = 0;
     int score = 0;
 
-    // Balık animasyon sistemi
-    public FishScoreSystem fishSystem;
+    bool hasAnswered = false;
+
+    public FishTank fishSystem;
 
     void Start()
     {
         updateQuestion();
         nextButton.interactable = false;
 
-        // Eğer inspector'dan atanmadıysa sahnede bul
         if (fishSystem == null)
-            fishSystem = FindObjectOfType<FishScoreSystem>();
+            fishSystem = FindObjectOfType<FishTank>();
     }
 
     void updateQuestion()
     {
+        if (currentQuestion >= questions.Count) return;
+
+        if (playerScript != null)
+        {
+            playerScript.ResetCharacter();
+        }
+
+        hasAnswered = false;
+
         question.text = questions[currentQuestion].Q;
 
         buttonText[0].text = questions[currentQuestion].A;
@@ -38,33 +50,56 @@ public class quizStuff : MonoBehaviour
 
     public void answerClick(string answer)
     {
-        // No validation to prevent out-of-turn clicking!!!
+        if (hasAnswered) return;
+
+        if (currentQuestion >= questions.Count) return;
+
+        hasAnswered = true;
 
         if (answer[0] == questions[currentQuestion].answer)
         {
             score += 1;
-            buttonText[4].text = "+" + score.ToString() + " fish";
+            buttonText[4].text = score.ToString() + " fish";
 
-            // ✅ Doğruysa +Fish animasyonu
             if (fishSystem != null)
-                fishSystem.fishAnimator.Play("+Fish");
+            {
+                fishSystem.UpdateTankVisuals(score);
+                fishSystem.PlayFeedbackAnimation(true);
+            }
+
+            if (playerScript != null)
+            {
+                playerScript.PlayCatchAnimation(true);
+            }
         }
         else
         {
-            buttonText[4].text = "-" + score.ToString() + " fish";
+            if (score > 0)
+            {
+                score -= 1;
+            }
 
-            // ❌ Yanlışsa -Fish animasyonu
+            buttonText[4].text = score.ToString() + " fish";
+
             if (fishSystem != null)
-                fishSystem.fishAnimator.Play("-Fish");
+            {
+                fishSystem.UpdateTankVisuals(score);
+                fishSystem.PlayFeedbackAnimation(false);
+            }
+
+            if (playerScript != null)
+            {
+                playerScript.PlayCatchAnimation(false);
+            }
         }
 
-        currentQuestion++; // go to next question
-        nextButton.interactable = true; // set next button clickable
+        currentQuestion++;
+        nextButton.interactable = true;
     }
 
     public void nextClick()
     {
-        updateQuestion(); // move to next question
+        updateQuestion();
         nextButton.interactable = false;
     }
 }

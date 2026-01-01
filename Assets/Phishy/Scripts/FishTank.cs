@@ -2,44 +2,24 @@
 
 public class FishTank : MonoBehaviour
 {
-    public Animator tankAnimator; // Inspector'dan atanacak (Animator: Fishtank)
 
-    // Belirli bir animasyonu oynat
-    public void PlayAnimation(string animName)
+    [Header("Background Settings")]
+    public SpriteRenderer backgroundRenderer;
+    public Sprite[] aquariumSprites;
+
+    public void UpdateTankVisuals(int score)
     {
-        if (tankAnimator != null)
-            tankAnimator.Play(animName);
-        else
-            Debug.LogWarning("FishTank: Animator atanmadı!");
+
+        if (backgroundRenderer != null && aquariumSprites.Length > 0)
+        {
+
+            int spriteIndex = Mathf.Clamp(score, 0, aquariumSprites.Length - 1);
+
+            backgroundRenderer.sprite = aquariumSprites[spriteIndex];
+        }
     }
 
-    // Skora göre animasyonu oynat
-    public void PlayScoreAnimation(int score)
+    public void PlayFeedbackAnimation(bool isCorrect)
     {
-        if (tankAnimator == null)
-        {
-            Debug.LogWarning("FishTank: Animator bulunamadı!");
-            return;
-        }
-
-        // Score'u 1-6 arası sınırlıyoruz
-        int animIndex = Mathf.Clamp(score, 1, 6);
-        string animName = animIndex + "Fish";
-
-        tankAnimator.Play(animName);
-    }
-
-    // Rastgele animasyon oynat (opsiyonel)
-    public void PlayRandomAnimation()
-    {
-        if (tankAnimator == null)
-        {
-            Debug.LogWarning("FishTank: Animator bulunamadı!");
-            return;
-        }
-
-        string[] animations = { "1Fish", "2Fish", "6Fish" };
-        int index = Random.Range(0, animations.Length);
-        tankAnimator.Play(animations[index]);
     }
 }
