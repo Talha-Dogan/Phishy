@@ -280,11 +280,11 @@ Transform:
   m_GameObject: {fileID: 486747482}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -110.97876, y: -109.14984, z: 43.55781}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 1698.0425, y: 861.7003, z: 87.11562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1694323914}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &494955691 stripped
 MonoBehaviour:
@@ -1224,8 +1224,6 @@ RectTransform:
   - {fileID: 1792105793}
   - {fileID: 1218147111}
   - {fileID: 1429828803}
-  - {fileID: 1925959559}
-  - {fileID: 486747484}
   - {fileID: 473579318}
   - {fileID: 914915300}
   m_Father: {fileID: 0}
@@ -1421,79 +1419,15 @@ MonoBehaviour:
   - {fileID: 1316978831}
   - {fileID: 1429828805}
   nextButton: {fileID: 1926105859}
-  questions:
-  - Q: "1. You receive an email claiming to be from your bank saying \u201CYour account
-      will be closed unless you verify it.\u201D What should you do?"
-    A: A) Click the link and log in
-    B: B) Call the bank directly or type the official website yourself
-    C: B) Call the bank directly or type the official website yourself
-    D: D) Reply and ask for more details
-    answer: 66
-  - Q: 2. Which of the following is usually found in a legitimate company email?
-    A: A) Gmail or Hotmail address
-    B: "B) Generic greeting like \u201CDear Customer\u201D"
-    C: C) Official company domain (e.g., @bankax.com)
-    D: D) Urgent tone and spelling mistakes
-    answer: 67
-  - Q: 3. Which of these is a warning sign of a phishing email?
-    A: A) Professional language
-    B: B) Brand logo
-    C: C) Broken links and typos
-    D: D) Corporate signature
-    answer: 67
-  - Q: "4. You get a social media message saying \u201CYou won! Enter your details
-      to claim your prize.\u201D What should you do?"
-    A: A) Click the link and fill out the form
-    B: B) Report or delete the message
-    C: C) Share it with your friends
-    D: D) Try your luck
-    answer: 66
-  - Q: "5. A company email asks you to change your password, but the link looks suspicious.
-      What\u2019s the safest action?"
-    A: A) Click the link
-    B: B) Report it to the IT department
-    C: C) Change your password immediately
-    D: D) Ignore the message
-    answer: 66
-  - Q: 6. How can you tell if a website is likely secure?
-    A: "A) The URL starts with \u201Chttps://\u201D"
-    B: B) Any link works
-    C: C) The page looks colorful
-    D: D) There are pop-up ads
-    answer: 65
-  - Q: 7. What do phishing attacks mainly target?
-    A: A) Online images
-    B: B) Personal or financial information
-    C: C) Software licenses
-    D: D) Browser history
-    answer: 66
-  - Q: "8. You receive an unexpected email saying \u201CView your invoice in the
-      attachment.\u201D What should you do?"
-    A: A) Download the file
-    B: B) Delete the email immediately
-    C: C) Reply to ask what it is
-    D: D) Click the link
-    answer: 66
-  - Q: 9. Which of the following is a good habit to prevent phishing?
-    A: A) Clicking every email link
-    B: B) Ignoring sender details
-    C: C) Checking email addresses carefully
-    D: D) Sharing your password
-    answer: 67
-  - Q: 10. An external email asks you to send confidential company data. What should
-      you do?
-    A: A) Send it right away
-    B: B) Forward it to the IT department
-    C: C) Reply to ask why
-    D: D) Fulfill the request
-    answer: 66
-  - Q: "11. How does the \u201Cphishing game\u201D usually work?"
-    A: A) Hackers use fake websites or messages to trick users into giving personal
-      data
-    B: "B) It\u2019s an online security training game"
-    C: "C) It\u2019s a tool for encrypting your data"
-    D: "D) It\u2019s a type of antivirus program"
-    answer: 65
+  buttonImages:
+  - {fileID: 7652222205585107260}
+  - {fileID: 1586605149641552717}
+  - {fileID: 8007300109760312380}
+  - {fileID: 5759661951264567026}
+  correctColor: {r: 0, g: 1, b: 0, a: 0.3137255}
+  wrongColor: {r: 1, g: 0, b: 0, a: 0.3137255}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.3137255}
+  jsonFile: {fileID: 4900000, guid: cb05aa914b6de47489aa5e16b22c3a97, type: 3}
   fishSystem: {fileID: 914915304}
 --- !u!4 &1925959559
 Transform:
@@ -1504,11 +1438,11 @@ Transform:
   m_GameObject: {fileID: 1925959557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -477.6182, y: -269.8426, z: -2.1917763}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 964.7636, y: 540.3148, z: -4.3835526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1694323914}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1926105858 stripped
 RectTransform:
@@ -1683,15 +1617,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4565702505713271306, guid: 04761ae9f04a6ef4aa4334ef087369cc, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
-      value: 0.7588323
+      value: 0.6289307
       objectReference: {fileID: 0}
     - target: {fileID: 4565702505713271306, guid: 04761ae9f04a6ef4aa4334ef087369cc, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.g
-      value: 1
+      value: 0.6289307
       objectReference: {fileID: 0}
     - target: {fileID: 4565702505713271306, guid: 04761ae9f04a6ef4aa4334ef087369cc, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
-      value: 0.7012578
+      value: 0.6289307
       objectReference: {fileID: 0}
     - target: {fileID: 4565702505713271306, guid: 04761ae9f04a6ef4aa4334ef087369cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1800,7 +1734,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
       propertyPath: m_fontSize
-      value: 15
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+      propertyPath: m_margin.w
+      value: 15.928207
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+      propertyPath: m_margin.x
+      value: 7.698662
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+      propertyPath: m_margin.y
+      value: 14.60088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+      propertyPath: m_margin.z
+      value: 8.229538
       objectReference: {fileID: 0}
     - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
       propertyPath: m_fontStyle
@@ -1820,7 +1770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6820952489405366445, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -1923,6 +1873,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+--- !u!114 &1586605149641552717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6433818736390071929, guid: 065f0aa237c994848aebca1c4cd5cf7b, type: 3}
+  m_PrefabInstance: {fileID: 1586605149641552716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2398153752746410079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2054,7 +2015,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
       propertyPath: m_fontSize
-      value: 15
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+      propertyPath: m_margin.w
+      value: 15.39724
+      objectReference: {fileID: 0}
+    - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+      propertyPath: m_margin.x
+      value: 8.760506
+      objectReference: {fileID: 0}
+    - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+      propertyPath: m_margin.y
+      value: 15.022711
+      objectReference: {fileID: 0}
+    - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+      propertyPath: m_margin.z
+      value: 6.636818
       objectReference: {fileID: 0}
     - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
       propertyPath: m_fontStyle
@@ -2074,7 +2051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 366977049843946845, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -2229,6 +2206,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+--- !u!114 &5759661951264567026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2713170567664595335, guid: c815ebaaa796ccd40b797e767be7a39a, type: 3}
+  m_PrefabInstance: {fileID: 5759661951264567025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7652222205585107259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2379,7 +2367,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
       propertyPath: m_fontSize
-      value: 15
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+      propertyPath: m_margin.w
+      value: 15.131786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+      propertyPath: m_margin.x
+      value: 7.6986237
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+      propertyPath: m_margin.y
+      value: 15.928234
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+      propertyPath: m_margin.z
+      value: 7.698723
       objectReference: {fileID: 0}
     - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
       propertyPath: m_fontStyle
@@ -2399,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7287381222024419967, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -2426,6 +2430,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+--- !u!114 &7652222205585107260 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7847671307858211501, guid: 55e5e32d4cb3e9749a1fada0f8ad9072, type: 3}
+  m_PrefabInstance: {fileID: 7652222205585107259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8007300109760312379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2552,7 +2567,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
       propertyPath: m_fontSize
-      value: 15
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+      propertyPath: m_margin.x
+      value: 6.6367416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+      propertyPath: m_margin.y
+      value: 15.66272
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+      propertyPath: m_margin.z
+      value: 5.04393
       objectReference: {fileID: 0}
     - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
       propertyPath: m_fontStyle
@@ -2572,11 +2599,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6378071831619161271, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332070503990504594, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -15.3973
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332070503990504594, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.6986
       objectReference: {fileID: 0}
     - target: {fileID: 7566102290110736877, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2615,8 +2650,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+--- !u!114 &8007300109760312380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4528994681961690943, guid: ae26ebb036f718e4d96816e2cd4418e1, type: 3}
+  m_PrefabInstance: {fileID: 8007300109760312379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1694323914}
+  - {fileID: 1925959559}
+  - {fileID: 486747484}

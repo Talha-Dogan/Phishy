@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "Q": "What is 'phishing'?",
+      "A": "A) A way to improve Internet security",
+      "B": "B) A type of email marketing strategy",
+      "C": "C) A scam to steal personal information using fake websites",
+      "D": "D) A method for tracking website visitors",
+      "answer": "C"
+    },
+    {
+      "Q": "Why is the word 'phishing' used to describe this scam?",
+      "A": "A) It was named after its inventor",
+      "B": "B) It sounds like 'fishing' and refers to luring victims",
+      "C": "C) It's short for 'phone-hacking'",
+      "D": "D) It is a computer virus",
+      "answer": "B"
+    },
+    {
+      "Q": "What kind of tricks do phishers use?",
+      "A": "A) Computer games and ads",
+      "B": "B) Free product samples",
+      "C": "C) Fake websites and emails with fake offers",
+      "D": "D) Social media friend requests",
+      "answer": "C"
+    },
+    {
+      "Q": "What do phishing groups often do to trick people into entering their data?",
+      "A": "A) Send them free gifts",
+      "B": "B) Invite them to play online games",
+      "C": "C) Send official-looking emails with fake website links",
+      "D": "D) Call them by phone",
+      "answer": "C"
+    },
+    {
+      "Q": "What is one way to recognize a phishing email?",
+      "A": "A) It contains urgent requests and doesn't use your name",
+      "B": "B) It offers free tickets to a concert",
+      "C": "C) It comes from your best friend",
+      "D": "D) It includes a long privacy policy",
+      "answer": "A"
+    },
+    {
+      "Q": "Why is phishing considered a serious problem?",
+      "A": "A) Because it causes viruses",
+      "B": "B) Because even a small success rate affects many people",
+      "C": "C) Because all emails are fake",
+      "D": "D) Because banks cannot prevent it",
+      "answer": "B"
+    },
+    {
+      "Q": "Does seeing a padlock icon (HTTPS) mean a site is 100% safe?",
+      "A": "A) Yes, always",
+      "B": "B) No, phishing sites can also use HTTPS",
+      "C": "C) Only on mobile phones",
+      "D": "D) Only if the padlock is green",
+      "answer": "B"
+    },
+    {
+      "Q": "What is 'Smishing'?",
+      "A": "A) Phishing via SMS text messages",
+      "B": "B) Phishing via email",
+      "C": "C) A type of fishing sport",
+      "D": "D) Smiling while fishing",
+      "answer": "A"
+    },
+    {
+      "Q": "If your browser warns 'Deceptive site ahead', you should:",
+      "A": "A) Ignore it and proceed",
+      "B": "B) Turn off your internet",
+      "C": "C) Close the tab immediately",
+      "D": "D) Reload the page",
+      "answer": "C"
+    },
+    {
+      "Q": "What is Multi-Factor Authentication (MFA)?",
+      "A": "A) Using a very long password",
+      "B": "B) Using more than one method to verify your identity",
+      "C": "C) Changing your password every day",
+      "D": "D) Using the same password for all sites",
+      "answer": "B"
+    }
+  ]
+}

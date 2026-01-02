@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "Q": "'Phishing' (Oltalama) nedir?",
+      "A": "A) Internet güvenliğini artırmanın bir yoludur",
+      "B": "B) Bir tür e-posta pazarlama stratejisidir",
+      "C": "C) Sahte site ve e-postalarla bilgi çalma dolandırıcılığıdır",
+      "D": "D) Web sitesi ziyaretçilerini takip etme yöntemidir",
+      "answer": "C"
+    },
+    {
+      "Q": "Neden bu dolandırıcılığa 'Phishing' ismi verilmiştir?",
+      "A": "A) Mucidinin adı olduğu için",
+      "B": "B) 'Fishing' (Balık tutma) kelimesine benzer, kurbanları yemlediği için",
+      "C": "C) Telefon hacklemenin kısaltması olduğu için",
+      "D": "D) Bir bilgisayar virüsü olduğu için",
+      "answer": "B"
+    },
+    {
+      "Q": "Dolandırıcılar insanları kandırmak için ne tür hileler kullanır?",
+      "A": "A) Bilgisayar oyunları ve reklamlar",
+      "B": "B) Ücretsiz ürün numuneleri",
+      "C": "C) Sahte teklifler içeren sahte web siteleri ve e-postalar",
+      "D": "D) Sosyal medya arkadaşlık istekleri",
+      "answer": "C"
+    },
+    {
+      "Q": "Dolandırıcılar verilerini girmeleri için insanları nasıl kandırır?",
+      "A": "A) Onlara bedava hediye göndererek",
+      "B": "B) Onları online oyun oynamaya davet ederek",
+      "C": "C) Resmi görünen e-postalar ve sahte linkler göndererek",
+      "D": "D) Telefonla arayıp sohbet ederek",
+      "answer": "C"
+    },
+    {
+      "Q": "Bir oltalama (phishing) e-postasını tanımanın bir yolu nedir?",
+      "A": "A) Aciliyet belirtir (Hemen Yap!) ve ismini kullanmaz",
+      "B": "B) Sana bedava konser bileti teklif eder",
+      "C": "C) En yakın arkadaşından gelir",
+      "D": "D) Çok uzun bir gizlilik politikası içerir",
+      "answer": "A"
+    },
+    {
+      "Q": "Oltalama saldırıları neden ciddi bir sorundur?",
+      "A": "A) Çünkü bilgisayara virüs bulaştırır",
+      "B": "B) Başarı oranı düşük olsa bile çok sayıda kişiyi etkiler",
+      "C": "C) Çünkü tüm e-postalar sahtedir",
+      "D": "D) Çünkü bankalar bunu engelleyemez",
+      "answer": "B"
+    },
+    {
+      "Q": "Bir sitede kilit simgesi (HTTPS) olması %100 güvenli olduğu anlamına mı gelir?",
+      "A": "A) Evet, her zaman güvenlidir",
+      "B": "B) Hayır, sahte siteler de kilit simgesi alabilir",
+      "C": "C) Sadece cep telefonunda güvenlidir",
+      "D": "D) Sadece kilit yeşil renkse güvenlidir",
+      "answer": "B"
+    },
+    {
+      "Q": "'Smishing' nedir?",
+      "A": "A) SMS (Kısa Mesaj) yoluyla yapılan oltalama",
+      "B": "B) E-posta yoluyla yapılan oltalama",
+      "C": "C) Bir tür balıkçılık sporu",
+      "D": "D) Balık tutarken gülümsemek",
+      "answer": "A"
+    },
+    {
+      "Q": "Tarayıcın 'İlerideki site aldatıcı olabilir' uyarısı verirse ne yapmalısın?",
+      "A": "A) Yoksay ve girmeye devam et",
+      "B": "B) İnternet modemini kapat",
+      "C": "C) Sekmeyi derhal kapat",
+      "D": "D) Sayfayı yenile",
+      "answer": "C"
+    },
+    {
+      "Q": "Çok Faktörlü Kimlik Doğrulama (MFA) nedir?",
+      "A": "A) Çok uzun bir şifre kullanmak",
+      "B": "B) Kimliğini doğrulamak için birden fazla yöntem kullanmak",
+      "C": "C) Şifreni her gün değiştirmek",
+      "D": "D) Her sitede aynı şifreyi kullanmak",
+      "answer": "B"
+    }
+  ]
+}
