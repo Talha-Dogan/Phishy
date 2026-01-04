@@ -5,6 +5,7 @@ using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
+    // ... (Diğer değişkenlerin aynen kalıyor) ...
     [Header("Player Reference")]
     public FishScoreSystem playerScript;
 
@@ -27,6 +28,7 @@ public class QuizManager : MonoBehaviour
 
     public FishTank fishSystem;
 
+    // ... (Start, LoadQuestions, RestartGame, updateQuestion fonksiyonların AYNI kalıyor) ...
     void Start()
     {
         if (fishSystem == null)
@@ -59,6 +61,9 @@ public class QuizManager : MonoBehaviour
     {
         currentQuestion = 0;
         score = 0;
+        // Oyuna başlarken kayıtlı skoru sıfırlıyoruz ki eski oyunun puanı kalmasın
+        PlayerPrefs.SetInt("CurrentScore", 0);
+
         buttonText[4].text = "0 Fish";
         if (playerScript != null) playerScript.ResetCharacter();
         if (fishSystem != null) fishSystem.UpdateTankVisuals(0);
@@ -83,6 +88,7 @@ public class QuizManager : MonoBehaviour
         foreach (Image img in buttonImages) if (img != null) img.color = defaultColor;
     }
 
+    // --- BURASI DÜZENLENDİ ---
     public void answerClick(string answer)
     {
         if (hasAnswered) return;
@@ -105,6 +111,9 @@ public class QuizManager : MonoBehaviour
             score++;
             buttonText[4].text = score.ToString() + " Fish";
 
+            // YENİ EKLENEN KISIM: Puan artınca kaydet
+            PlayerPrefs.SetInt("CurrentScore", score);
+
             if (buttonImages.Length > clickedIndex) buttonImages[clickedIndex].color = correctColor;
             if (fishSystem != null) { fishSystem.UpdateTankVisuals(score); fishSystem.PlayFeedbackAnimation(true); }
             if (playerScript != null) playerScript.PlayCatchAnimation(true);
@@ -114,11 +123,18 @@ public class QuizManager : MonoBehaviour
             if (score > 0) score--;
             buttonText[4].text = score.ToString() + " Fish";
 
+            // YENİ EKLENEN KISIM: Puan azalınca kaydet
+            PlayerPrefs.SetInt("CurrentScore", score);
+
             if (buttonImages.Length > clickedIndex) buttonImages[clickedIndex].color = wrongColor;
             if (buttonImages.Length > correctIndex) buttonImages[correctIndex].color = correctColor;
             if (fishSystem != null) { fishSystem.UpdateTankVisuals(score); fishSystem.PlayFeedbackAnimation(false); }
             if (playerScript != null) playerScript.PlayCatchAnimation(false);
         }
+
+        // Değişikliği diske hemen yaz (Garanti olsun)
+        PlayerPrefs.Save();
+
         currentQuestion++;
         nextButton.interactable = true;
     }
@@ -130,6 +146,7 @@ public class QuizManager : MonoBehaviour
     }
 }
 
+// ... (Class tanımları aynı kalıyor) ...
 [System.Serializable]
 public class quizQuestions
 {

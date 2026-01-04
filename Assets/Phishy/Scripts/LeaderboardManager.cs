@@ -46,13 +46,17 @@ public class LeaderboardManager : MonoBehaviour
 
     private void Update()
     {
+        // İstersen bunu Update yerine sadece Start'ta çalıştırabilirsin, daha performanslı olur.
         RefreshCurrentScore();
     }
 
     private void RefreshCurrentScore()
     {
+        // DÜZENLENDİ: Score.score yerine PlayerPrefs'ten okuyoruz
+        int finalScore = PlayerPrefs.GetInt("CurrentScore", 0);
+
         if (_currentScoreText != null)
-            _currentScoreText.text = $"Your Score: {Score.score}";
+            _currentScoreText.text = $"Your Score: {finalScore}";
     }
 
     public void SaveNameAndUploadScore()
@@ -67,7 +71,9 @@ public class LeaderboardManager : MonoBehaviour
     private System.Collections.IEnumerator UploadNextFrame()
     {
         yield return null;
-        int playerScore = Score.score;
+
+        // DÜZENLENDİ: Score.score yerine PlayerPrefs'ten okuyoruz
+        int playerScore = PlayerPrefs.GetInt("CurrentScore", 0);
 
         Leaderboards.PhishyLeaderBoard.UploadNewEntry(PlayerName, playerScore, success =>
         {

@@ -958,7 +958,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488117938}
-  - component: {fileID: 488117937}
+  - component: {fileID: 488117939}
+  - component: {fileID: 488117940}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -966,18 +967,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &488117937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488117936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a82604544bbd4694586495505b7533ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &488117938
 Transform:
   m_ObjectHideFlags: 0
@@ -993,6 +982,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488117939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488117936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ecd931db6d2554ebfbbad1ae24c2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _namesTextObjects:
+  - {fileID: 1304808187}
+  - {fileID: 1923278739}
+  - {fileID: 588024839}
+  - {fileID: 182570627}
+  - {fileID: 700633945}
+  - {fileID: 817637495}
+  - {fileID: 1589571409}
+  - {fileID: 985868408}
+  - {fileID: 779547201}
+  - {fileID: 481187935}
+  _scoresTextObjects:
+  - {fileID: 1968618920}
+  - {fileID: 1809215890}
+  - {fileID: 1473620648}
+  - {fileID: 161886893}
+  - {fileID: 144889733}
+  - {fileID: 1867153060}
+  - {fileID: 281664655}
+  - {fileID: 2035226959}
+  - {fileID: 1653646325}
+  - {fileID: 589008108}
+  _usernameInputField: {fileID: 951515015}
+  _currentScoreText: {fileID: 1158493384}
+--- !u!114 &488117940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488117936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82604544bbd4694586495505b7533ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSceneName: GameScene
+  playButton: {fileID: 0}
+  enButtonImage: {fileID: 0}
+  trButtonImage: {fileID: 0}
+  selectedColor: {r: 0, g: 1, b: 0, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &588024837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PLAY AGA\u0130N"
+  m_text: "TRY AGA\u0130N"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2091,7 +2134,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 488117937}
+      - m_Target: {fileID: 488117940}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: loadLevel
         m_Mode: 5
@@ -2394,12 +2437,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980833811}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8344, y: 1.8344, z: 1.8344}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
+  m_LocalScale: {x: 0.9172, y: 0.9172, z: 0.9172}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1859481301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985868406
 GameObject:
@@ -2548,7 +2591,7 @@ GameObject:
   - component: {fileID: 1158493384}
   - component: {fileID: 1158493386}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4239,6 +4282,7 @@ RectTransform:
   - {fileID: 1158493383}
   - {fileID: 947302531}
   - {fileID: 1724368807}
+  - {fileID: 980833813}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4790,4 +4834,3 @@ SceneRoots:
   - {fileID: 1859481301}
   - {fileID: 1493586186}
   - {fileID: 488117938}
-  - {fileID: 980833813}
